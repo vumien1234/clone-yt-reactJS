@@ -1,0 +1,10 @@
+.Container-Body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 55px;
+    .Content-body{
+        width: 80%;
+        flex: 1;
+    }
+}

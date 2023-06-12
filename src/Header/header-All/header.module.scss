@@ -1,0 +1,156 @@
+.Container-header{
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    margin: 0 25px;
+    .wrapper{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-header{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        cursor: pointer;
+        .icon-menu-header{
+            width: 30px;
+            height: 32px;
+            font-size: 25px;
+        }
+        .icon-logo-header img{
+            width: 130px;
+            height: 90px;
+            margin-left: 15px;
+        }
+        
+    }
+    .search-box{
+        display: flex;
+        .search-micro{
+            margin-left: 30px;
+            background-color: transparent;
+            font-size: 20px;
+            padding: 10px 14px;
+            border-radius: 50%;
+            &:hover{
+                background-color: var(--color3);
+            }
+        }
+    }
+    .search-header{
+        position: relative;
+        width: 600px;
+        height: 40px;
+        display: flex;
+        border: 1px solid var(--color2);
+        border-radius: 90px;
+    
+        .search-input-header{
+            position: relative;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            input{
+                position: absolute;
+                width: 525px;
+                height: 100%;
+                padding-left: 15px;
+                border-right: 1px solid var(--color2);
+                font-size: 16px;
+                background-color: transparent;
+                &:focus-within{
+                    border: 1.2px solid #3f51b5;
+                    border-top-left-radius: 90px;
+                    border-bottom-left-radius: 90px;
+                }
+            }
+            .icon-input-header{
+                position: absolute;
+                right:5px;
+                display: flex;
+                align-items: center;
+                
+                cursor: pointer;
+                .icon-remove{
+                    background-color: transparent;
+                    font-size: 20px;
+                    padding: 8px 12px;
+                    border-radius: 50%;
+                    &:hover{
+                        background-color: var(--color3);
+                    }
+                }
+            }
+
+        }
+        .button-search-header{
+            width: 85px;
+            font-size: 20px;
+            border-top-right-radius: 90px;
+            border-bottom-right-radius: 90px;
+            background-color:var(--bg-color);
+            cursor: pointer;
+            &:hover{
+                background-color: var(--color3);
+            }
+        }
+    }
+    .action-header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        .create-header, .Notification-header{
+            background-color: transparent;
+            font-size: 21px;
+            padding: 10px 13px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--color3);
+            }
+        }
+        .Notification-header{
+            margin: 0 20px;
+        }
+        .Account img{
+            width: 35px;
+            height: 35px;
+            border-radius:50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}
+.css-Tippy-header{
+    background: #909090 !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    color: #fff;
+}
+// css box result
+.list-result-search{
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+    padding-top: 10px;
+    .remove-result{
+        position: absolute;
+        right: 20px;
+        color: rgb(132, 132, 234);
+    }
+}
+.list-result-search li{
+    &:hover{
+        background-color: var(--color3);
+    }
+    list-style: none;
+    padding: 10px 15px;
+}
+// list-menu
+.list-menu{
+    position: absolute;
+    background-color: #ccc;
+    top: 70px;
+    width: 250px;
+}

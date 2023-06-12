@@ -1,0 +1,31 @@
+.title{
+    display: block;
+}
+.icon , .icon1{
+    font-size: 18px;
+}
+.avata{
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box-item{
+        width: 70px;
+        height:70px;
+        margin: 0 5px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        transition: background-color ease-in-out 200ms;
+        &:hover{
+            background-color: var(--color3);
+        }
+    }
+    &.active{
+        color: red;
+    }
+}
+
